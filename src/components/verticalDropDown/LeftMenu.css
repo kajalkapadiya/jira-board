@@ -1,0 +1,94 @@
+.line {
+  width: 3px;
+  position: absolute;
+  min-height: 100vh;
+  margin-top: 55px;
+  bottom: 0px;
+  left: 22px;
+  background: var(
+    --ds-border,
+    linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2) 0px,
+      rgba(0, 0, 0, 0.2) 1px,
+      rgba(0, 0, 0, 0.1) 1px,
+      rgba(0, 0, 0, 0) 100%
+    )
+  );
+  opacity: 0.5;
+  pointer-events: none;
+  transition-duration: 0.22s;
+  transition-property: left, opacity, width;
+  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.line-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  min-height: 100vh;
+  background-color: #ccc;
+}
+
+.line-open {
+  width: 3px;
+  position: absolute;
+  min-height: 100vh;
+  margin-top: 55px;
+  bottom: 0px;
+  left: 208px;
+  background: var(
+    --ds-border,
+    linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2) 0px,
+      rgba(0, 0, 0, 0.2) 1px,
+      rgba(0, 0, 0, 0.1) 1px,
+      rgba(0, 0, 0, 0) 100%
+    )
+  );
+  opacity: 0.5;
+  pointer-events: none;
+  transition-duration: 0.22s;
+  transition-property: left, opacity, width;
+  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.expand-btn {
+  position: absolute;
+  border: 1px solid #e6e8eb;
+  border-radius: 100%;
+  top: 30px;
+  left: 10px;
+}
+
+.expand-btn-open {
+  position: absolute;
+  border: 1px solid #e6e8eb;
+  border-radius: 100%;
+  top: 30px;
+  left: 198px;
+}
+
+.hover-div {
+  min-height: 100vh;
+  width: 24px;
+}
+
+.dropdown1 {
+  position: absolute;
+  background-color: white;
+  color: black;
+  margin-right: 20px;
+  height: 100vh;
+  width: 200px;
+  padding: 10px;
+  transition: width 300ms cubic-bezier(0.2, 0, 0, 1) 0s;
+}
